@@ -1,0 +1,16 @@
+[package]
+name = "common"
+edition.workspace = true
+license-file = "../../LICENSE"
+publish = false
+version.workspace = true
+
+[dependencies]
+chardetng = "0.1"
+encoding_rs = "0.8"
+prost.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+uuid.workspace = true
+zip = { version = "2.4.2", default-features = false, features = ["deflate"] }

@@ -1,0 +1,189 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: clip;
+  padding: var(--space-8);
+  background: var(--hp-surface-page);
+  color: var(--color-text);
+}
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.orbPrimary,
+.orbSecondary {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(18px);
+  opacity: 0.9;
+}
+
+.orbPrimary {
+  top: 10%;
+  left: 12%;
+  width: 320px;
+  height: 320px;
+  background: color-mix(in srgb, var(--color-accent) 22%, white);
+}
+
+.orbSecondary {
+  right: 10%;
+  bottom: 12%;
+  width: 260px;
+  height: 260px;
+  background: color-mix(in srgb, var(--color-warning) 26%, white);
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 620px);
+  padding: clamp(28px, 4vw, 40px);
+  border: 1px solid color-mix(in srgb, var(--color-border) 68%, transparent);
+  border-radius: 30px;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--color-panel) 92%, var(--color-surface)),
+      color-mix(in srgb, var(--color-panel) 86%, var(--color-surface-hover))
+    );
+  box-shadow:
+    0 24px 72px rgba(15, 23, 42, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(18px);
+}
+
+.brandRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brandMark {
+  width: 38px;
+  height: 30px;
+  color: var(--color-accent);
+  flex: 0 0 auto;
+}
+
+.brandText {
+  display: grid;
+  gap: 2px;
+}
+
+.brandText strong {
+  font-size: 0.98rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.brandText span {
+  font-size: 0.78rem;
+  color: var(--color-text-secondary);
+}
+
+.eyebrow {
+  margin-top: 28px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 7px 12px;
+  border: 1px solid color-mix(in srgb, var(--color-warning) 22%, transparent);
+  background: color-mix(in srgb, var(--color-warning) 12%, transparent);
+  color: color-mix(in srgb, var(--color-warning) 76%, var(--color-text));
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 16px 0 12px;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 0.96;
+  letter-spacing: -0.05em;
+  font-weight: 650;
+  text-wrap: balance;
+}
+
+.description {
+  margin: 0;
+  max-width: 48ch;
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.actions {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.primaryAction,
+.secondaryAction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background-color var(--motion-duration-fast) var(--motion-ease-standard),
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    color var(--motion-duration-fast) var(--motion-ease-standard),
+    transform var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.primaryAction {
+  background: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+.primaryAction:hover {
+  background: var(--color-accent-hover);
+}
+
+.secondaryAction {
+  border: 1px solid color-mix(in srgb, var(--color-border) 80%, transparent);
+  background: color-mix(in srgb, var(--color-surface) 75%, white);
+  color: var(--color-text);
+}
+
+.secondaryAction:hover {
+  background: color-mix(in srgb, var(--color-surface-hover) 85%, white);
+}
+
+.primaryAction:hover,
+.secondaryAction:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: var(--space-5);
+  }
+
+  .card {
+    border-radius: 24px;
+    padding: 24px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .primaryAction,
+  .secondaryAction {
+    width: 100%;
+  }
+}

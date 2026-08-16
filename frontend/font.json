@@ -1,0 +1,140 @@
+{
+  "ui_roles": {
+    "hero_title": {
+      "desktop": { "size": "3rem", "line_height": "1.1", "weight": 700 },
+      "mobile": { "size": "2.25rem", "line_height": "1.15", "weight": 700 }
+    },
+    "hero_subtitle": {
+      "desktop": { "size": "1.25rem", "line_height": "1.4", "weight": 500 },
+      "mobile": { "size": "1rem", "line_height": "1.4", "weight": 500 }
+    },
+    "page_title": {
+      "desktop": { "size": "1.75rem", "line_height": "1.2", "weight": 700 },
+      "mobile": { "size": "1.5rem", "line_height": "1.25", "weight": 700 }
+    },
+    "section_title": {
+      "desktop": { "size": "1.25rem", "line_height": "1.3", "weight": 650 },
+      "mobile": { "size": "1.125rem", "line_height": "1.35", "weight": 650 }
+    },
+    "card_title": {
+      "desktop": { "size": "1rem", "line_height": "1.35", "weight": 600 },
+      "mobile": { "size": "0.9375rem", "line_height": "1.4", "weight": 600 }
+    },
+    "body_primary": {
+      "desktop": { "size": "1rem", "line_height": "1.65", "weight": 450 },
+      "mobile": { "size": "0.95rem", "line_height": "1.65", "weight": 450 }
+    },
+    "body_secondary": {
+      "desktop": { "size": "0.9375rem", "line_height": "1.6", "weight": 450 },
+      "mobile": { "size": "0.875rem", "line_height": "1.6", "weight": 450 }
+    },
+    "meta": {
+      "desktop": { "size": "0.8125rem", "line_height": "1.45", "weight": 500 },
+      "mobile": { "size": "0.75rem", "line_height": "1.45", "weight": 500 }
+    },
+    "caption": {
+      "desktop": { "size": "0.75rem", "line_height": "1.4", "weight": 500 },
+      "mobile": { "size": "0.6875rem", "line_height": "1.4", "weight": 500 }
+    },
+    "code": {
+      "desktop": { "size": "0.875rem", "line_height": "1.55", "weight": 500 },
+      "mobile": { "size": "0.8125rem", "line_height": "1.55", "weight": 500 }
+    },
+    "badge": {
+      "desktop": { "size": "0.75rem", "line_height": "1.3", "weight": 600 },
+      "mobile": { "size": "0.6875rem", "line_height": "1.3", "weight": 600 }
+    }
+  },
+  "markdown_roles": {
+    "body": {
+      "desktop": { "size": "1rem", "line_height": "1.65", "weight": 400 },
+      "mobile": { "size": "1rem", "line_height": "1.65", "weight": 400 }
+    },
+    "h1": {
+      "desktop": { "size": "1.875rem", "line_height": "1.25", "weight": 700 },
+      "mobile": { "size": "1.625rem", "line_height": "1.3", "weight": 700 }
+    },
+    "h2": {
+      "desktop": { "size": "1.5rem", "line_height": "1.3", "weight": 700 },
+      "mobile": { "size": "1.3125rem", "line_height": "1.35", "weight": 700 }
+    },
+    "h3": {
+      "desktop": { "size": "1.25rem", "line_height": "1.4", "weight": 650 },
+      "mobile": { "size": "1.125rem", "line_height": "1.4", "weight": 650 }
+    },
+    "h4": {
+      "desktop": { "size": "1.125rem", "line_height": "1.45", "weight": 600 },
+      "mobile": { "size": "1.0625rem", "line_height": "1.45", "weight": 600 }
+    },
+    "h5": {
+      "desktop": { "size": "1.0625rem", "line_height": "1.5", "weight": 600 },
+      "mobile": { "size": "1rem", "line_height": "1.5", "weight": 600 }
+    },
+    "h6": {
+      "desktop": { "size": "1rem", "line_height": "1.5", "weight": 600 },
+      "mobile": { "size": "0.95rem", "line_height": "1.5", "weight": 600 }
+    },
+    "code_inline": {
+      "desktop": { "size": "0.875rem", "line_height": "1.55", "weight": 500 },
+      "mobile": { "size": "0.8125rem", "line_height": "1.55", "weight": 500 }
+    },
+    "code_block": {
+      "desktop": { "size": "0.875rem", "line_height": "1.6", "weight": 500 },
+      "mobile": { "size": "0.8125rem", "line_height": "1.6", "weight": 500 }
+    },
+    "quote": {
+      "desktop": { "size": "1rem", "line_height": "1.7", "weight": 450 },
+      "mobile": { "size": "0.95rem", "line_height": "1.7", "weight": 450 }
+    },
+    "table": {
+      "desktop": { "size": "0.875rem", "line_height": "1.55", "weight": 450 },
+      "mobile": { "size": "0.8125rem", "line_height": "1.55", "weight": 450 }
+    },
+    "caption": {
+      "desktop": { "size": "0.75rem", "line_height": "1.4", "weight": 500 },
+      "mobile": { "size": "0.6875rem", "line_height": "1.4", "weight": 500 }
+    }
+  },
+  "markdown_rhythm": {
+    "desktop": {
+      "paragraph_margin_block": "0.75em",
+      "heading_margin_top": "0.9em",
+      "heading_margin_bottom": "0.35em",
+      "list_margin_block": "0.5em",
+      "list_item_margin_block": "0.25em",
+      "list_padding_inline_start": "1.5em",
+      "blockquote_margin_block": "0.8em",
+      "blockquote_padding_inline_start": "1em",
+      "hr_margin_block": "1.5em",
+      "code_block_margin_block": "0.75em",
+      "code_block_padding_block": "0.875rem",
+      "code_block_padding_inline": "1rem",
+      "table_margin_block": "0.75em"
+    },
+    "mobile": {
+      "paragraph_margin_block": "0.7em",
+      "heading_margin_top": "0.8em",
+      "heading_margin_bottom": "0.3em",
+      "list_margin_block": "0.45em",
+      "list_item_margin_block": "0.2em",
+      "list_padding_inline_start": "1.3em",
+      "blockquote_margin_block": "0.7em",
+      "blockquote_padding_inline_start": "0.9em",
+      "hr_margin_block": "1.25em",
+      "code_block_margin_block": "0.7em",
+      "code_block_padding_block": "0.75rem",
+      "code_block_padding_inline": "0.875rem",
+      "table_margin_block": "0.7em"
+    }
+  },
+  "markdown_surfaces": {
+    "chat": {
+      "desktop": { "measure_max_width": "72ch" },
+      "mobile": { "measure_max_width": "64ch" }
+    },
+    "notes_preview": {
+      "desktop": { "measure_max_width": "72ch" },
+      "mobile": { "measure_max_width": "64ch" }
+    }
+  }
+}

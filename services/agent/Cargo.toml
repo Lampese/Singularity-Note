@@ -1,0 +1,48 @@
+[package]
+name = "svc-agent"
+edition.workspace = true
+license-file = "../../LICENSE"
+publish = false
+version.workspace = true
+
+[dependencies]
+axum.workspace = true
+common = { path = "../../crates/common" }
+container = { path = "../../crates/container" }
+http-util = { path = "../../crates/http-util" }
+storage = { path = "../../crates/storage" }
+dotenvy = "0.15"
+hyper.workspace = true
+observability = { path = "../../crates/observability" }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "multipart"] }
+rig-core = "=0.36.0"
+serde.workspace = true
+serde_json.workspace = true
+chrono.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tokio-stream = { version = "0.1", features = ["sync"] }
+tokio-util = "0.7"
+tonic.workspace = true
+tower-http.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+uuid.workspace = true
+jsonwebtoken.workspace = true
+prost.workspace = true
+tar = "0.4"
+base64 = "0.22"
+bytes = "1"
+dashmap.workspace = true
+futures-util = "0.3"
+schemars.workspace = true
+serde_valid.workspace = true
+hmac = "0.12"
+sha2 = "0.10"
+url.workspace = true
+utoipa = { version = "5", features = ["axum_extras"] }
+utoipa-swagger-ui = { version = "8", features = ["axum", "vendored"] }
+
+[build-dependencies]
+tonic-build.workspace = true
+protoc-bin-vendored = "3"

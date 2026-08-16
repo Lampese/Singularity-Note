@@ -1,0 +1,30 @@
+[package]
+name = "svc-media"
+edition.workspace = true
+license-file = "../../LICENSE"
+publish = false
+version.workspace = true
+
+[dependencies]
+base64 = "0.22"
+chrono.workspace = true
+dotenvy = "0.15"
+jsonwebtoken.workspace = true
+observability = { path = "../../crates/observability" }
+prost.workspace = true
+reqwest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2 = "0.10"
+sqlx.workspace = true
+tempfile = "3"
+thiserror.workspace = true
+tokio.workspace = true
+tonic.workspace = true
+tracing.workspace = true
+url.workspace = true
+uuid.workspace = true
+
+[build-dependencies]
+protoc-bin-vendored = "3"
+tonic-build.workspace = true

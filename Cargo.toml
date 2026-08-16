@@ -1,0 +1,49 @@
+[workspace]
+members = [
+    "crates/common",
+    "crates/container",
+    "crates/http-util",
+    "crates/observability",
+    "crates/storage",
+    "services/api",
+    "services/core",
+    "services/ingest",
+    "services/media",
+    "services/web_open",
+    "services/agent",
+    "crates/migration",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+
+[workspace.dependencies]
+axum = { version = "0.7", features = ["macros", "multipart"] }
+hyper = { version = "1", features = ["server", "http1"] }
+jsonwebtoken = "9"
+prost = "0.12"
+sqlx = { version = "0.8.6", features = ["runtime-tokio", "postgres", "uuid", "chrono", "json"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
+tokio = { version = "1", features = ["full"] }
+tonic = { version = "0.11", features = ["transport"] }
+tonic-health = "0.11"
+tonic-build = "0.11"
+tower = "0.4"
+tower-http = { version = "0.5", features = ["cors"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt", "json"] }
+uuid = { version = "1", features = ["serde", "v4"] }
+chrono = { version = "0.4", features = ["serde", "clock"] }
+url = "2"
+reqwest = { version = "0.13.3", features = ["form", "json", "multipart", "rustls", "stream"] }
+bollard = "0.18"
+prometheus-client = "0.24"
+dashmap = "6"
+rs-fsrs = "1.2.1"
+backon = { version = "1", default-features = false, features = ["tokio-sleep"] }
+schemars = "0.8"
+serde_valid = "2.0.1"

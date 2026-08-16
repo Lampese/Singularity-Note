@@ -1,0 +1,17 @@
+[package]
+name = "migration"
+edition.workspace = true
+license-file = "../../LICENSE"
+publish = false
+version.workspace = true
+
+[dependencies]
+common = { path = "../common" }
+serde.workspace = true
+serde_json.workspace = true
+sqlx.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+thiserror.workspace = true
+uuid.workspace = true

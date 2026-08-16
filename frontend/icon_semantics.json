@@ -1,0 +1,18 @@
+{
+  "action": {
+    "delete": "trash",
+    "close": "x",
+    "expand_sidebar": "caret_right",
+    "collapse_sidebar": "caret_left",
+    "theme_light": "sun",
+    "theme_dark": "moon",
+    "theme_auto": "text_a_underline",
+    "new_item": "plus",
+    "upload": "upload_simple"
+  },
+  "domain": {
+    "conversation": "chat_circle_dots",
+    "resource_pdf": "file_pdf",
+    "resource_text": "file_text"
+  }
+}

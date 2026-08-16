@@ -1,0 +1,86 @@
+{
+  "_comment": "Landing page (homepage) design tokens. Fixed dark palette — independent of the app theme. Keys use snake_case. Edit here; run type-check to validate.",
+
+  "surface": {
+    "page":           "#0d1217",
+    "bg":             "#0f1419",
+    "bg_elevated":    "#161b22",
+    "elevated":       "#21262d",
+    "hover":          "#30363d",
+    "dark":           "#131a22",
+    "dark_elevated":  "#1a242e",
+    "dark_section":   "#11181f",
+    "dark_feature":   "#121920",
+    "device":         "#0e141a",
+    "light":          "#fbfdff",
+    "light_bg":       "#f6f8fa",
+    "light_panel":    "#ffffff",
+    "light_hover":    "#f3f4f6",
+    "light_active":   "#ebedf0"
+  },
+
+  "content": {
+    "primary":              "#e6edf3",
+    "secondary":            "#9aa6b2",
+    "muted":                "#72808d",
+    "secondary_alpha":      "rgba(230, 237, 243, 0.78)",
+    "on_light":             "#20262d",
+    "on_light_secondary":   "#5f6d79"
+  },
+
+  "accent": {
+    "default":      "#2ea043",
+    "strong":       "#3fb950",
+    "focus_border": "rgba(63, 185, 80, 0.54)",
+    "focus_ring":   "0 0 0 4px rgba(46, 160, 67, 0.14)"
+  },
+
+  "status": {
+    "danger":       "#f85149",
+    "danger_soft":  "rgba(248, 81, 73, 0.12)",
+    "success_soft": "rgba(46, 160, 67, 0.12)",
+    "success_text": "#8be59a",
+    "error_text":   "#ffb5af"
+  },
+
+  "border": {
+    "subtle":       "rgba(255, 255, 255, 0.08)",
+    "default":      "rgba(255, 255, 255, 0.16)",
+    "light":        "#d0d7de",
+    "danger":       "rgba(248, 81, 73, 0.2)",
+    "success":      "rgba(46, 160, 67, 0.2)"
+  },
+
+  "glass": {
+    "header_bg":     "rgba(19, 25, 32, 0.78)",
+    "header_border": "rgba(255, 255, 255, 0.06)",
+    "overlay_bg":    "rgba(12, 18, 26, 0.58)",
+    "card_bg":       "rgba(8, 14, 22, 0.8)",
+    "input_bg":      "rgba(255, 255, 255, 0.04)",
+    "screen_header": "rgba(255, 255, 255, 0.92)",
+    "screen_pill":   "rgba(255, 255, 255, 0.88)"
+  },
+
+  "effect": {
+    "shadow_soft": "0 18px 60px rgba(0, 0, 0, 0.22)"
+  },
+
+  "layout": {
+    "content_width": "min(1200px, calc(100vw - 32px))",
+    "auth_width":    "min(1280px, calc(100vw - 32px))"
+  },
+
+  "radius": {
+    "xl":        "36px",
+    "lg":        "28px",
+    "md":        "20px",
+    "sm":        "14px",
+    "auth_card": "30px"
+  },
+
+  "motion": {
+    "fast": "180ms ease",
+    "base": "260ms ease",
+    "slow": "420ms cubic-bezier(0.22, 1, 0.36, 1)"
+  }
+}

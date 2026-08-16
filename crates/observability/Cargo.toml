@@ -1,0 +1,13 @@
+[package]
+name = "observability"
+edition.workspace = true
+license-file = "../../LICENSE"
+publish = false
+version.workspace = true
+
+[dependencies]
+axum.workspace = true
+prometheus-client.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true

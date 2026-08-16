@@ -1,0 +1,34 @@
+[package]
+name = "svc-core"
+edition.workspace = true
+license-file = "../../LICENSE"
+publish = false
+version.workspace = true
+
+[dependencies]
+common = { path = "../../crates/common" }
+thiserror.workspace = true
+tracing.workspace = true
+sqlx.workspace = true
+chrono.workspace = true
+uuid.workspace = true
+url.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }
+sha2 = "0.10"
+hex = "0.4"
+prost.workspace = true
+tonic.workspace = true
+jsonwebtoken.workspace = true
+rs-fsrs.workspace = true
+reqwest.workspace = true
+observability = { path = "../../crates/observability" }
+anyhow = "1"
+dotenvy = "0.15"
+
+[build-dependencies]
+tonic-build.workspace = true
+protoc-bin-vendored = "3"
+
+[dev-dependencies]

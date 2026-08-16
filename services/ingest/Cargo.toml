@@ -1,0 +1,29 @@
+[package]
+name = "svc-ingest"
+edition.workspace = true
+license-file = "../../LICENSE"
+publish = false
+version.workspace = true
+
+[dependencies]
+common = { path = "../../crates/common" }
+svc-core = { path = "../core" }
+http-util = { path = "../../crates/http-util" }
+observability = { path = "../../crates/observability" }
+storage = { path = "../../crates/storage" }
+axum.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tower-http.workspace = true
+thiserror.workspace = true
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }
+tokio-util = "0.7"
+tracing.workspace = true
+uuid.workspace = true
+backon.workspace = true
+tonic.workspace = true
+anyhow = "1"
+dotenvy = "0.15"
+chrono.workspace = true
+reqwest.workspace = true
+futures = "0.3"
